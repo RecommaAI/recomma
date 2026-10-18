@@ -1,0 +1,152 @@
+:root {
+  --bg: #ffffff;
+  --fg: #171717;
+  --muted: #737373;
+  --line: #e5e5e5;
+  --hit: #3b4fd8;
+  --hit-bg: #eef0fd;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #171717;
+    --fg: #fafafa;
+    --muted: #a3a3a3;
+    --line: #2e2e2e;
+    --hit: #8ea2ff;
+    --hit-bg: #1f2442;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 360px;
+  margin: 0;
+  padding: 14px;
+  background: var(--bg);
+  color: var(--fg);
+  font: 13px/1.45 system-ui, -apple-system, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.you {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+
+.you input {
+  flex: 1;
+  padding: 5px 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--fg);
+  font: inherit;
+}
+
+.status {
+  margin: 0 0 8px;
+  color: var(--muted);
+}
+
+.status strong {
+  color: var(--hit);
+}
+
+.list {
+  max-height: 340px;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.list li {
+  border-bottom: 1px solid var(--line);
+}
+
+.list details > summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 7px 4px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.list li.hit {
+  background: var(--hit-bg);
+}
+
+.list li.hit .domain {
+  color: var(--hit);
+  font-weight: 600;
+}
+
+.count {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.list ul {
+  margin: 0;
+  padding: 0 4px 8px 12px;
+  list-style: none;
+}
+
+.list ul a {
+  display: block;
+  overflow: hidden;
+  color: var(--muted);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.row {
+  margin-top: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--fg);
+  font: inherit;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--fg);
+}

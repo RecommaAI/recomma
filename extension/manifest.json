@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Recomma — AI Answer Sources",
+  "short_name": "AI Sources",
+  "version": "0.1.0",
+  "description": "See every source an AI answer cites on ChatGPT, Perplexity, Gemini and Google AI Mode — and whether your site is one of them.",
+  "homepage_url": "https://recomma.ai",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Sources in this AI answer"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["activeTab", "scripting", "storage"]
+}

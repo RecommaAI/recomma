@@ -1,0 +1,8 @@
+<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <rect fill="#0a0a0a" height="128" rx="28" width="128" />
+  <path
+    d="M8 100V42A42 42 0 1 1 72.97 77.16L92 100H48V76C48 66 56.08 62.76 63.79 53.57A18 18 0 1 0 32 42V100Z"
+    fill="#fafafa"
+    transform="translate(24 24) scale(0.8)"
+  />
+</svg>
