@@ -26,7 +26,7 @@
 
 ## Why the sources an answer shows matter
 
-An AI answer is assembled from the pages the engine retrieves, and the pages it cites are the ones a reader can click. In [our trial](https://recomma.ai/pricing) of twelve questions, each asked both through a model's API and on the page a reader uses, **26 of the 35 sources a reader saw never appeared in the API's answer**. A tool that only calls the API misses most of what people are actually shown.
+An AI answer is assembled from the pages the engine retrieves, and the pages it cites are the ones a reader can click. In [our study](https://recomma.ai/blog/chatgpt-interface-vs-api) of 100 buying questions, each asked in ChatGPT's interface and through its API with search, **the cited pages overlapped only 8% of the time**, and the interface cited 7.8 domains per answer to the API's 3.2. A tool that only calls the API misses most of what people are actually shown.
 
 The extension shows you one answer as a reader sees it. [Recomma](https://recomma.ai) does the same thing for every question in your category, on every engine, every day, with the sample size beside every figure.
 
